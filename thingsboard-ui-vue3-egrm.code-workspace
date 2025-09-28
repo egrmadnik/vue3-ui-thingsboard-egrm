@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "./node_modules/typescript/lib",
+		"typescript.enablePromptUseWorkspaceTsdk": true,
+		"explorer.openEditors.visible": 0,
+		"breadcrumbs.enabled": true,
+		"liveServer.settings.donotShowInfoMsg": true,
+		"telemetry.enableCrashReporter": false,
+		"workbench.settings.enableNaturalLanguageSearch": false,
+		"workbench.sideBar.location": "left",
+		"explorer.fileNesting.expand": false
+	}
+}
