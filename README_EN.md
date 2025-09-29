@@ -7,7 +7,7 @@
   <h1>ThingsBoard UI Vue3</h1>
 </div>
 
-
+[Chinese version](./README.md) | [Backend connection](./docker/BACKEND_CONNECTION.md)
 
 ## Introduction
 

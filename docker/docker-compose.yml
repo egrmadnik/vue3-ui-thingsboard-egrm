@@ -1,0 +1,15 @@
+services:
+  tb:
+    image: thingsboard/tb-postgres:4.1.0
+    container_name: tb
+    restart: unless-stopped
+    environment:
+      TB_QUEUE_TYPE: in-memory
+    ports:
+      - "8080:8080"                # HTTP API/UI
+      - "1883:1883"                # MQTT
+      - "7070:7070"                # Edge RPC (optional)
+      - "5683-5688:5683-5688/udp"  # CoAP (optional)
+    volumes:
+      - ./data:/data
+      - ./logs:/var/log/thingsboard

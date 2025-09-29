@@ -1,21 +1,10 @@
-### [English version](./README_EN.md) 
+# ThingsBoard UI Vue3
 
-### [BACKEND_CONNECTION](./BACKEND_CONNECTION.md)
-
- <div align="center">
-
-  <br>
-  <br>
-
-</div>
-
-
-
+[English version](./README_EN.md) | [Backend connection](./docker/BACKEND_CONNECTION.md)
 
 ## 介绍
 
 Thingsboard UI Vue3 是 Thingsboard 的前端适配版本。作为一个免费开源的前端项目，它采用了最新的 Vue 3、Vite、TypeScript 等主流技术开发，基于[vue-vben-admin](https://github.com/vbenjs/vue-vben-admin), 开箱即用，可用于前端替换，也适合学习参考。
-
 
 🎉 请大家持续关注，watch、star、fork 一键三连
 
@@ -33,7 +22,7 @@ Thingsboard UI Vue3 是 Thingsboard 的前端适配版本。作为一个免费�
 
 📌 大屏组态 完成
 
-📌 TDengine 已适配 
+📌 TDengine 已适配
 
 📌 uniapp小程序 开发中...
 
@@ -100,6 +89,4 @@ Thingsboard UI Vue3 是 Thingsboard 的前端适配版本。作为一个免费�
 
 ## 🙋‍♂️联系我们
 
-<left class ='img'>
-<img title="扫码沟通" src="./images/weixin.jpg" width=40%" />
-</left>
+![扫码沟通](images/weixin.jpg)

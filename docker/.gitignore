@@ -1,0 +1,8 @@
+# Ignore ThingsBoard Docker bind mounts
+# Prevent committing persistent data and logs
+
+data/
+logs/
+
+# Keep this .gitignore file tracked
+!.gitignore

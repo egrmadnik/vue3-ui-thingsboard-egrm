@@ -17,10 +17,32 @@ This app uses a centralized Axios client (`defHttp`) configured with environment
   - `requestOptions.apiUrl = globSetting.apiUrl`
   - `requestOptions.urlPrefix = globSetting.urlPrefix`
 
+## Run local ThingsBoard backend (Docker, v4.1.0)
+
+- **Compose file**: `./docker-compose.yml` (image `thingsboard/tb-postgres:4.1.0`)
+- **WSL users**: see [WSL setup](./WSL_SETUP.md) for running via Docker Desktop integration or native Docker in WSL.
+- **Steps (PowerShell)**:
+
+  ```powershell
+  docker compose pull
+  docker compose run --rm tb install
+  docker compose up -d
+  docker compose logs -f tb
+  ```
+
+- **UI**: <http://localhost:8080>
+  - Default login: `sysadmin@thingsboard.org` / `sysadmin`
+- **Reset volumes (optional)**:
+
+  ```powershell
+  docker compose down -v
+  ```
+
 ## Development proxy (Vite) → ThingsBoard
 
 - Source: `.env.development`, `build/options/server.ts`, `build/config/index.ts`
 - `.env.development`:
+
   ```env
   VITE_PROXY = [["/api","http://127.0.0.1:8080/api",false]]
   ```
@@ -33,6 +55,7 @@ This app uses a centralized Axios client (`defHttp`) configured with environment
 
 - Source: `.env.production`
 - Set these for your deployment:
+
   ```env
   VITE_GLOB_API_URL = https://your-thingsboard-host
   VITE_GLOB_API_URL_PREFIX = /api
@@ -62,14 +85,17 @@ This app uses a centralized Axios client (`defHttp`) configured with environment
 
 - Development (`.env.development`):
   - Local ThingsBoard (default):
+
     ```env
     VITE_PROXY = [["/api","http://127.0.0.1:8080/api",false]]
     ```
   - Public demo:
+
     ```env
     VITE_PROXY = [["/api","https://demo.thingsboard.io/api",true]]
     ```
 - Production (`.env.production`):
+
   ```env
   VITE_GLOB_API_URL = https://your-thingsboard-host
   VITE_GLOB_API_URL_PREFIX = /api
