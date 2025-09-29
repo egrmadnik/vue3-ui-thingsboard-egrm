@@ -1,10 +1,12 @@
-<div align="center">
+### [English version](./README_EN.md) 
+
+### [BACKEND_CONNECTION](./BACKEND_CONNECTION.md)
+
+ <div align="center">
 
   <br>
   <br>
 
-
-  <h1>Thingsboard UI Vue3</h1>
 </div>
 
 
