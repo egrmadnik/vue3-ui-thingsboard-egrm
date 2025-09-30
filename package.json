@@ -23,6 +23,9 @@
     "reinstall": "rimraf pnpm-lock.yaml node_modules && npm run bootstrap",
     "update": "ncu -u -x codemirror,pinia,cropperjs && npm run reinstall"
   },
+  "lint-staged": {
+    "*.{ts,tsx,vue,js,jsx}": "node scripts/check-bilingual-comments.mjs"
+  },
   "dependencies": {
     "@ant-design/colors": "8.0.0",
     "@ant-design/icons-vue": "7.0.1",

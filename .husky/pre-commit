@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run bilingual comment checker directly on staged files to avoid package-runner quirks
+FILES="$(git diff --name-only --cached --diff-filter=ACM | grep -E '\.(ts|tsx|vue|js|jsx)$' || true)"
+
+if [ -n "$FILES" ]; then
+  node scripts/check-bilingual-comments.mjs $FILES
+fi
