@@ -106,7 +106,7 @@ const tb: AppRouteModule = {
         orderNo: 40,
         icon: 'ant-design:database-outlined',
         tabIcon: 'ant-design:team-outlined',
-        title: t('设备管理'),
+        title: t('Device.management'),
         single: false,
         authority: [Authority.TENANT_ADMIN, Authority.CUSTOMER_USER],
       },
