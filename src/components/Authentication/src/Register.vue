@@ -40,22 +40,27 @@
     formSchema?: FormSchema[];
     /**
      * @zh_CN 是否处于加载处理状态
+     * @en_US Whether in loading state
      */
     loading?: boolean;
     /**
      * @zh_CN 登录路径
+     * @en_US Login path
      */
     loginPath?: string;
     /**
      * @zh_CN 标题
+     * @en_US Title
      */
     title?: string;
     /**
      * @zh_CN 描述
+     * @en_US Subtitle / description
      */
     subTitle?: string;
     /**
      * @zh_CN 按钮文本
+     * @en_US Button text
      */
     submitButtonText?: string;
   }
